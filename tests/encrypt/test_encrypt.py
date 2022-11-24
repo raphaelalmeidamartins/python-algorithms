@@ -3,7 +3,7 @@ from challenges.challenge_encrypt_message import encrypt_message
 
 
 def test_encrypt_message():
-    with pytest.raises(TypeError, match="tipo inválido para key"):
+    with pytest.raises(TypeError, match="tipo inválido para message"):
         encrypt_message(2, 1)
 
     with pytest.raises(TypeError, match="tipo inválido para key"):
