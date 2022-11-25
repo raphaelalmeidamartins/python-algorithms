@@ -1,9 +1,9 @@
 def quick_sort(char_list, start, end):
     if start < end:
-        pivot_index = partition(char_list, start, end)
+        delimiter = partition(char_list, start, end)
 
-        quick_sort(char_list, start, pivot_index - 1)
-        quick_sort(char_list, pivot_index + 1, end)
+        quick_sort(char_list, start, delimiter - 1)
+        quick_sort(char_list, delimiter + 1, end)
 
 
 def partition(char_list, start, end):
